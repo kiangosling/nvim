@@ -43,6 +43,7 @@ map("n", "<F7>", ":vertical resize +2<CR>")
 map("n", "<F8>", ":vertical resize -2<CR>")
 
 -- zk-nvim
+map("n", "<leader>mdn", ":cd $NEXTCLOUD_PATH/mdnotes<CR>") -- cd to mdnotes directory
 map("n", "<leader>zi", ":ZkIndex<CR>") -- Indexes the notebook
 map("n", "<leader>zn", ":ZkNew<CR>") -- Creates new note
 map("n", "<leader>zr", ":ZkCd<CR>") -- Changes directory to the notebook root
@@ -64,7 +65,7 @@ map("n", "<leader>G", ":lua require('fzf-lua').grep_cword()<CR>") --grep word un
 
 -- misc
 map("n", "<leader>s", ":%s//g<Left><Left>") --replace all
-map("n", "<leader>t", ":NvimTreeToggle<CR>") --open file explorer
+map("n", "<leader>t", ":NvimTreeFocus<CR>") --open file explorer
 map("n", "<leader>L", ":Lazy<CR>") --lazy.nvim
 map('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') --preserves session
 map("n", "<leader>w", ":w<CR>") --write but one less key
